@@ -4,10 +4,12 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.5;
+    width: 100%;
 }
 
-footer {
+.footer {
     font-size: 13px;
+    padding: 0px 20px;
 }
 
 .header {
@@ -15,6 +17,16 @@ footer {
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
     font-size: 20px;
+    margin: 10px 20px 0px 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lavender;
+    padding: 5px 20px;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -23,17 +35,21 @@ footer {
     font-weight: 700;
     color: lightgreen;
     background-color: rebeccapurple;
+    padding: 5px 15px;
 }
 
 ul {
     display: flex;
+    gap: 30px;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
-ul>li {
-    margin-right: 10px;
+.results {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
 }
 
 .box {
@@ -44,8 +60,8 @@ ul>li {
 }
 
 .aside {
-    border-right: 1px solid #000;
-    padding-right: 20px;
+    background-color: lavender;
+    padding: 10px 20px;
 }
 
 .post {
@@ -63,5 +79,16 @@ h2,
 h3 {
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    color: cadetblue;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 8px 15px;
+}
+
+h1+.section {
+    background-color: moccasin;
 }
